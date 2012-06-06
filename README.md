@@ -1,14 +1,12 @@
 #colorizeImage.js
 
-*colorizeImage.js* is small library for colorizing product images on the client side. It uses HTML5's `canvas` element if possible and Flash as fallback.
+*colorizeImage.js* is small library for colorizing product images on the client side. It uses HTML5's `canvas` element if possible and Flash as fallback. Try the fancy [demo](http://kaioa.com/k/test/colorizeImage/demo/demo.html)!
 
-It needs a picture of a white version of the product, a mask image, and a color (hex).
+All you need is a white product image, a mask image thereof, and a few hex colors.
 
 ![illustration](colorizeImage.js/raw/master/illustration.jpg)
 
 [T-Shirt photo borrowed from [Wikipedia](http://de.wikipedia.org/w/index.php?title=Datei:Wikipedia-T-shirt.jpg&filetimestamp=20060620192619)]
-
-[Demo](http://kaioa.com/k/test/colorizeImage/demo/demo.html)
 
 #Usage
 
