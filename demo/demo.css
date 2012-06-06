@@ -1,0 +1,46 @@
+/* ................................................................. Colorize */
+.Colorize {
+}
+.Colorize > object {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.Colorize._tShirt {
+	width: 475px;
+	height: 430px;
+}
+/* ................................................................. Swatches */
+.Swatches {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	display: inline-block;
+	padding: 8px;
+	background: #888;
+}
+.Swatches > li {
+	display: inline-block;
+	*display: inline;
+}
+.Swatches > li > button {
+	display: inline-block;
+	*display: inline;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #000;
+	padding: 0;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.Swatches > li > button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+.Swatches > li > button:hover {
+	border-color: #fff;
+}
+.Swatches > li + li > button{
+	margin-left: 8px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>colorize</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="demo.css"/>
+	</head>
+	<body>
+		<!--
+		Required attributes:
+			data-base - path to the base image
+			data-mask - path to the mask image
+			data-swf - path to the swf file
+		-->
+		<div id="demo-1" class="Colorize _tShirt" data-base="shirt-base.jpg" data-mask="shirt-mask.jpg" data-swf="../swf/colorizeImage.swf"></div>
+		<!--
+		It's up to you how the controls should work and how they should look like.
+		The hex values were duplicated in a data attribute, because you can't access the "style" attribute directly in IE.
+		IE returns an object with a "cssText" property. However, this is the serialized result which doesn't use the hex value anymore.
+		-->
+		<ul class="Swatches" id="swatches-1" data-target="demo-1">
+			<li><button type="button" style="background:#778899" data-color="778899" title="lightslategray"></button></li>
+			<li><button type="button" style="background:#f4a460" data-color="f4a460" title="sandybrown"></button></li>
+			<li><button type="button" style="background:#fa8072" data-color="fa8072" title="salmon"></button></li>
+			<li><button type="button" style="background:#dcdcdc" data-color="dcdcdc" title="gainsboro"></button></li>
+			<li><button type="button" style="background:#f5deb3" data-color="f5deb3" title="wheat"></button></li>
+			<li><button type="button" style="background:#dda0dd" data-color="dda0dd" title="plum"></button></li>
+			<li><button type="button" style="background:#add8e6" data-color="add8e6" title="lightblue"></button></li>
+			<li><button type="button" style="background:#98fb98" data-color="98fb98" title="palegreen"></button></li>
+		</ul>
+
+		<p><small>Photo borrowed from: <a href="http://de.wikipedia.org/w/index.php?title=Datei:Wikipedia-T-shirt.jpg&filetimestamp=20060620192619">Wikipedia</a></small></p>
+		
+		<script src="../js/colorizeImage.js"></script>
+		<script src="demo.js"></script>
+	</body>
+</html>
